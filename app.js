@@ -35,4 +35,14 @@ const createTags = (input) => {
 
 const randomSelect = () => {
   const times = 30;
+
+  const interVal = setInterval(() => {
+    const randomTag = pickRandomTag()
+  }, 100)
 };
+
+
+const pickRandomTag=()=>{
+    const tags = document.querySelectorAll('.tag')
+    return tags[]
+}
