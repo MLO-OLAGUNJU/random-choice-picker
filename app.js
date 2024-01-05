@@ -53,9 +53,9 @@ const pickRandomTag = () => {
 };
 
 const highlightTag = (tag) => {
-  tag.classList.add(".highlight");
+  tag.classList.add("highlight");
 };
 
 const unHighlightTag = (tag) => {
-  tag.classList.remove(".highlight");
+  tag.classList.remove("highlight");
 };
