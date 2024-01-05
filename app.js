@@ -14,5 +14,13 @@ const createTags = (input) => {
     .split(",")
     .filter((tag) => tag.trim() !== "")
     .map((tag) => tag.trim());
-  console.log(tags);
+
+  tagsElement.innerHTML = "";
+
+  tags.forEach((tag) => {
+    const tagEl = document.createElement("span");
+    tagEl.classList.add("tag");
+    tagEl.textContent = tag;
+    tagsElement.appendChild(tagEl);
+  });
 };
