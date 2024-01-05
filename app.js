@@ -7,6 +7,14 @@ textAreaElement.focus();
 
 textAreaElement.addEventListener("keyup", (e) => {
   createTags(e.target.value);
+
+  if (e.key == "Enter") {
+    setTimeout(() => {
+      e.target.value = "";
+    }, 10);
+
+    randomSelect();
+  }
 });
 
 const createTags = (input) => {
@@ -23,4 +31,8 @@ const createTags = (input) => {
     tagEl.textContent = tag;
     tagsElement.appendChild(tagEl);
   });
+};
+
+const randomSelect = () => {
+  const times = 30;
 };
