@@ -50,6 +50,6 @@ const highlightTag = (tag) => {
   tag.classList.add(".highlight");
 };
 
-const highlightTag = (tag) => {
+const unHighlightTag = (tag) => {
   tag.classList.add(".highlight");
 };
