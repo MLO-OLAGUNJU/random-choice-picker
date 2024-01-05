@@ -51,5 +51,5 @@ const highlightTag = (tag) => {
 };
 
 const unHighlightTag = (tag) => {
-  tag.classList.add(".highlight");
+  tag.classList.remove(".highlight");
 };
