@@ -45,3 +45,11 @@ const pickRandomTag = () => {
   const tags = document.querySelectorAll(".tag");
   return tags[Math.floor(Math.random() * tags.length)];
 };
+
+const highlightTag = (tag) => {
+  tag.classList.add(".highlight");
+};
+
+const highlightTag = (tag) => {
+  tag.classList.add(".highlight");
+};
